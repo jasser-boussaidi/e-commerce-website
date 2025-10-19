@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .navbar-custom {
+            background-color: #111;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #818181 !important;
+        }
+
+        .navbar-brand:hover, .nav-link:hover {
+            color: #f1f1f1 !important;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+        }
+
+        .main-content {
+            margin-top: 100px;
+            padding: 16px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .product-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Fitness Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Training Equipment</a></li>
+                            <li><a class="dropdown-item" href="#">Supplements</a></li>
+                            <li><a class="dropdown-item" href="#">Boxing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary me-2" href="signup.html">Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary" href="login.html">Login</a>
+                    </li>
+                </ul>
+                <form class="d-flex search-container" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search here" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <h2>Product Showcase</h2>
+        <h3>Explore our selection of products</h3>
+        
+        <div class="product-grid">
+            <div class="card product-card">
+                <img src="poids-de-musculation-en-fonte-28mm.avif" class="card-img-top" alt="Weight for Workout">
+                <div class="card-body">
+                    <h5 class="card-title">Weight for Workout - 28mm</h5>
+                    <p class="card-text">High-quality weight for advanced workouts.</p>
+                    <p class="price text-danger">109.00 DT</p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="barre-musculation-haltere-35cm-28mm.avif" class="card-img-top" alt="Workout Bar">
+                <div class="card-body">
+                    <h5 class="card-title">Workout Bar - 35cm</h5>
+                    <p class="card-text">Durable workout bar for home and gym.</p>
+                    <p class="price text-danger">49.00 DT</p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="paire-d-halteres-fitness-23-kg-gris.avif" class="card-img-top" alt="Dumbbell 3 KG">
+                <div class="card-body">
+                    <h5 class="card-title">Dumbbell 3 KG</h5>
+                    <p class="card-text">Perfect dumbbell for daily strength training.</p>
+                    <p class="price text-danger">15.00 DT</p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="paire-d-halteres-fitness-22-kg-bleu-marine.avif" class="card-img-top" alt="Dumbbell 2 KG">
+                <div class="card-body">
+                    <h5 class="card-title">Dumbbell 2 KG</h5>
+                    <p class="card-text">Compact and efficient for light exercises.</p>
+                    <p class="price text-danger">10.00 DT</p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="gants-de-boxe-100-rouge.avif" class="card-img-top" alt="Boxing Gloves">
+                <div class="card-body">
+                    <h5 class="card-title">Boxing Gloves - Red</h5>
+                    <p class="card-text">High-quality gloves for intense training.</p>
+                    <p class="price text-danger">89.00 DT</p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+            <div class="card product-card">
+                <img src="kit-sac-de-frappe-gants-de-boxe-enfant-rouges.avif" class="card-img-top" alt="Kids Boxing Set">
+                <div class="card-body">
+                    <h5 class="card-title">Kids Boxing Set - Red</h5>
+                    <p class="card-text">Ideal boxing set for children.</p>
+                    <p class="price text-danger">180.00 DT</p>
+                    <a href="#" class="btn btn-primary">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card product-card">
+      <img src="casque-de-boxe-adulte-integral-500-noir.avif" class="card-img-top" alt="Boxing Helmet">
+      <div class="card-body">
+          <h5 class="card-title">Boxing Helmet - Black</h5>
+          <p class="card-text">Protective gear for boxing enthusiasts.</p>
+          <p class="price text-danger">57.00 DT</p>
+          <a href="#" class="btn btn-primary">View More</a>
+      </div>
+  </div>
+  <div class="card product-card">
+      <img src="kimono-karate-500-adulte.avif" class="card-img-top" alt="Karate Gi">
+      <div class="card-body">
+          <h5 class="card-title">Karate Gi - Adult</h5>
+          <p class="card-text">Premium karate outfit for professionals.</p>
+          <p class="price text-danger">160.00 DT</p>
+          <a href="#" class="btn btn-primary">View More</a>
+      </div>
+  </div>
+  <div class="card product-card">
+      <img src="protege-tibia-pied-karate-900-rouge.avif" class="card-img-top" alt="Karate Shin Guard">
+      <div class="card-body">
+          <h5 class="card-title">Karate Shin Guard - Red</h5>
+          <p class="card-text">Enhanced protection for martial artists.</p>
+          <p class="price text-danger">99.00 DT</p>
+          <a href="#" class="btn btn-primary">View More</a>
+      </div>
+  </div>
+  <div class="card product-card">
+      <img src="sous-gants-de-boxe-500-ergo-noirs.avif" class="card-img-top" alt="Boxing Inner Gloves">
+      <div class="card-body">
+          <h5 class="card-title">Boxing Inner Gloves - Black</h5>
+          <p class="card-text">Essential accessory for boxing training.</p>
+          <p class="price text-danger">59.00 DT</p>
+          <a href="#" class="btn btn-primary">View More</a>
+      </div>
+  </div>
+  <div class="card product-card">
+      <img src="Owari-Satin-Karate-Black-Belt-Martial-Arts-b.avif" class="card-img-top" alt="Boxing Inner Gloves">
+      <div class="card-body">
+          <h5 class="card-title">Owari Deluxe Martial Arts Karate Black Belt 100% Satin </h5>
+          <p class="card-text">WT approved
+              Made for Full Face protection.</p>
+          <p class="price text-danger">59.00 DT</p>
+          <a href="#" class="btn btn-primary">View More</a>
+      </div>
+  </div>
+</div>
+
+
+<footer class="mt-5 bg-dark text-light text-center p-3">
+<p>&copy; 2024 Fitness Store. All rights reserved.</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
